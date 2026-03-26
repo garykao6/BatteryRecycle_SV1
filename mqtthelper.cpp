@@ -397,6 +397,8 @@ void MqttHelper::onMessageReceived(const QByteArray &message, const QMqttTopicNa
     else if (t.endsWith("/autoPoweroff")) emit autoPoweroffReceived(payload);
     else if (t.endsWith("/autoPoweroffCancel")) emit autoPoweroffCancelReceived(payload);
     else if (t.endsWith("/poweronDateAck")) emit poweronDateAckReceived(payload);
+    else if (t.endsWith("/weightReset")) emit weightResetReceived(payload);
+    else if (t.endsWith("/motorControl")) emit motorControlReceived(payload);
 
 }
 
@@ -406,7 +408,7 @@ void MqttHelper::subscribeCmdTopics() {
         "loginAck", "pause", "resume", "reset", "otaNotify", "otaCancel",
         "setAutoShutdown", "setLightSchedule", "setRingLight", "syncResponse",
         "reboot","poweroff","storeInfoAck","carouselNotify","sleep","autoPoweroff",
-        "autoPoweroffCancel","poweronDateAck"
+        "autoPoweroffCancel","poweronDateAck","weightReset","motorControl"
     };
     for (const QString &cmd : cmds)
     {

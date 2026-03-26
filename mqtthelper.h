@@ -102,6 +102,8 @@ signals:
     void autoPoweroffReceived(const QJsonObject &payload);      //設定自動關機指令
     void autoPoweroffCancelReceived(const QJsonObject &payload);//關閉自動關機指令
     void poweronDateAckReceived(const QJsonObject &payload); //合約接收後台資訊
+    void weightResetReceived(const QJsonObject &payload);    // 遠端電池重量歸零
+    void motorControlReceived(const QJsonObject &payload);   // 後台馬達控制
 
 private slots:
     void onConnected();          // MQTT 連線成功

@@ -35,6 +35,59 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="station_lb">
+   <property name="geometry">
+    <rect>
+     <x>366</x>
+     <y>1232</y>
+     <width>420</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	font: 500 24px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color: transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>無資料</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_lb">
+   <property name="geometry">
+    <rect>
+     <x>732</x>
+     <y>1233</y>
+     <width>420</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	letter-spacing: 0px;
+	color: black;
+	image: none;
+	font: 500 20px &quot;Noto Sans CJK TC&quot;;
+	border: none;
+	background-color: transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>2025/8/19下午16:00</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+  </widget>
   <widget class="QPushButton" name="go_backstage_login_btn">
    <property name="geometry">
     <rect>
@@ -54,6 +107,32 @@
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="station_lb_2">
+   <property name="geometry">
+    <rect>
+     <x>231</x>
+     <y>1232</y>
+     <width>101</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color: black;
+	font: 500 24px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color: transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string>站點名稱</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
    </property>
   </widget>
  </widget>

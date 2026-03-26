@@ -30,6 +30,7 @@
 #include <QProcess>
 #include "backstage.h"
 #include "backstagelogin_page.h"
+#include "DeviceAPI.h"
 
 #include <QSslSocket>
 
@@ -337,7 +338,30 @@ int main(int argc, char *argv[])
         global::writeConfig("powerOffTime",autoPoweroffStr);//寫入關機時間
         qDebug()<<"關閉機台自動關機設定";
     });
-
+    QObject::connect(&global::mqtt(), &MqttHelper::weightResetReceived,[](const QJsonObject &){
+        qDebug()<<"遠端重量歸零";
+        global::estWeightG() = 0;
+        global::writeConfig("totalWeight", 0);
+        if (global::monitor()) global::monitor()->checkStatus();
+    });
+    QObject::connect(&global::mqtt(), &MqttHelper::motorControlReceived,[&stack,&err_dlg](const QJsonObject &payload){
+        qDebug()<<"後台馬達控制（先進入暫停再執行）";
+        if (global::idlewatcher()) global::idlewatcher()->pause();
+        global::getVideoShow()->stop();
+        global::getVideoShow()->hide();
+        // 二代為 LedAPI_Set(0x00ff00)；一代 API 僅 LedAPI_Select，與 resume 相同綠燈語意
+        LedAPI_Select(2);
+        global::isMaintenanceMode = true;
+        global::isStopMode = true;
+        global::writeConfig("keepStop", global::isStopMode);
+        if (global::monitor()) global::monitor()->checkStatus();
+        stack.setCurrentWidget(err_dlg);
+        QString action = payload.value("action").toString();
+        if (action == "forward") DeviceAPI_MotorForward();
+        else if (action == "back") DeviceAPI_MotorBack();
+        else if (action == "stop") DeviceAPI_MotorStop();
+        if (global::monitor()) global::monitor()->checkStatus();
+    });
 
     //收到廣告輪播資訊
     QObject::connect(&global::mqtt(), &MqttHelper::carouselNotifyReceived,[](const QJsonObject &payload){

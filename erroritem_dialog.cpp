@@ -1,5 +1,8 @@
 #include "erroritem_dialog.h"
 #include "ui_erroritem_dialog.h"
+#include "clockbus.h"
+#include "global.h"
+#include "mqtthelper.h"
 // ErrorItem_Dialog::ErrorItem_Dialog(SYSTEM_ERROR_ITEM errItem,QWidget *parent)
 ErrorItem_Dialog::ErrorItem_Dialog(QWidget *parent,SYSTEM_ERROR_ITEM errItem)
     : QDialog(parent)
@@ -8,6 +11,21 @@ ErrorItem_Dialog::ErrorItem_Dialog(QWidget *parent,SYSTEM_ERROR_ITEM errItem)
     ui->setupUi(this);
     // setWindowFlags(Qt::FramelessWindowHint | Qt::Widget);  // 無邊框嵌入
     setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);  // 無邊框 最上層
+
+    // 異常畫面（oosImg / nightBreak）顯示時間與站點，對齊首頁
+    ui->time_lb->setText(ClockBus::instance()->nowText());
+    ui->station_lb->setText(global::storeInfo);
+    connect(ClockBus::instance(), &ClockBus::minuteTick, this, [this](const QDateTime&, const QString& s) {
+        ui->time_lb->setText(s);
+    });
+    connect(&global::mqtt(), &MqttHelper::storeInfoAckReceived, this, [this](const QJsonObject& obj) {
+        const QJsonObject storeObj = obj.value("store").toObject();
+        const QString storeName = storeObj.value("name").toString();
+        if (!storeName.isEmpty()) {
+            global::storeInfo = storeName;
+            ui->station_lb->setText(global::storeInfo);
+        }
+    });
 }
 
 ErrorItem_Dialog::~ErrorItem_Dialog()
@@ -24,6 +42,9 @@ void ErrorItem_Dialog::showMachine()
     //         border: none;
     //     }
     // )");
+    ui->time_lb->setVisible(false);
+    ui->station_lb->setVisible(false);
+    ui->station_lb_2->setVisible(false);
 }
 
 void ErrorItem_Dialog::showMaintain()
@@ -34,6 +55,9 @@ void ErrorItem_Dialog::showMaintain()
             border: none;
         }
     )");
+    ui->time_lb->setVisible(true);
+    ui->station_lb->setVisible(true);
+    ui->station_lb_2->setVisible(true);
 }
 
 void ErrorItem_Dialog::showFull()
@@ -44,6 +68,9 @@ void ErrorItem_Dialog::showFull()
     //         border: none;
     //     }
     // )");
+    ui->time_lb->setVisible(false);
+    ui->station_lb->setVisible(false);
+    ui->station_lb_2->setVisible(false);
 }
 
 void ErrorItem_Dialog::showNetwork()
@@ -54,6 +81,9 @@ void ErrorItem_Dialog::showNetwork()
     //         border: none;
     //     }
     // )");
+    ui->time_lb->setVisible(false);
+    ui->station_lb->setVisible(false);
+    ui->station_lb_2->setVisible(false);
 }
 
 void ErrorItem_Dialog::showIdentify()
@@ -64,6 +94,9 @@ void ErrorItem_Dialog::showIdentify()
             border: none;
         }
     )");
+    ui->time_lb->setVisible(false);
+    ui->station_lb->setVisible(false);
+    ui->station_lb_2->setVisible(false);
 }
 
 //休眠
@@ -75,6 +108,9 @@ void ErrorItem_Dialog::showSleep()
             border: none;
         }
     )");
+    ui->time_lb->setVisible(true);
+    ui->station_lb->setVisible(true);
+    ui->station_lb_2->setVisible(true);
 }
 
 void ErrorItem_Dialog::on_go_backstage_login_btn_clicked()
@@ -105,4 +141,3 @@ void ErrorItem_Dialog::on_go_backstage_login_btn_clicked()
     stack->setCurrentIndex(kBackIndex);                  // 用索引最安全
     qDebug() << "✅ 已切到 index" << kBackIndex;
 }
-

@@ -42,11 +42,11 @@ public:
     ~ErrorItem_Dialog();
 
     void showMachine();
-    void showMaintain();
+    void showMaintain();//維修中
     void showFull();
     void showNetwork();
-    void showIdentify();
-    void showSleep();//休眠頁面
+    void showIdentify();//無法辨識
+    void showSleep();//休眠
 
 
 private slots:

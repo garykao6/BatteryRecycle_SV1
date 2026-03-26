@@ -1,2 +1,0 @@
-sudo PULSE_SERVER=unix:/run/user/1000/pulse/native /usr/local/bin/qt_gpio_test ＃執行電池機程式
-

@@ -1,7 +1,7 @@
 一代電池機 — 版本與 Git 習慣
 ================================
 
-目前軟韌體版本字串定義於 global.cpp 的 global::SWVersion（例：SmartBatteryV1-1.1.2）。
+目前軟韌體版本字串定義於 global.cpp 的 global::SWVersion（例：SmartBatteryV1-1.1.6）。
 
 修改程式或發佈前請依序：
 
@@ -11,3 +11,6 @@
 4. 對外發佈或凍結某版時，在該提交上打 Git 標籤，標籤名與 SWVersion 一致，例如：
    git tag -a SmartBatteryV1-1.1.2 -m "SmartBatteryV1-1.1.2"
    git push origin SmartBatteryV1-1.1.2
+5. 版本變更摘要請同步更新 docs/版本紀錄.md。
+
+說明與版本文件位於專案 docs/ 資料夾（見 docs/README.md）。
