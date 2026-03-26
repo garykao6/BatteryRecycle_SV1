@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>backstage</class>
+ <widget class="QWidget" name="backstage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="sub_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>1920</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+	image: none;
+	border: none;
+	background-color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <widget class="QPushButton" name="home_btn">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>200</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>首頁</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop_service_btn">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>200</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>暫停服務</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="system_down_btn">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>200</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>關機</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="system_reboot_btn">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>200</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>重新啟動</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_btn">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>1320</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>清除</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>980</y>
+      <width>861</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="title">
+     <string>燈號控制</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="green_btn">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>80</y>
+       <width>170</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>綠</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="blue_btn">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>80</y>
+       <width>170</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>藍</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="red_btn">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>80</y>
+       <width>170</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>紅</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="off_btn">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>170</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>630</y>
+      <width>861</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="title">
+     <string>履帶控制</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="stop_btn">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>80</y>
+       <width>220</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>停止</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Reverse_btn">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>80</y>
+       <width>220</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>反轉</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Forward_btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>220</width>
+       <height>140</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>正轉</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>1500</y>
+      <width>681</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>軟韌體版本：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>機台序號：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sw_fw_version_lb">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>73</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font: 700 25px &quot;Noto Sans CJK TC&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="deviceId_lb">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>341</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FLCBRM3_U2508001</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>120</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+     </property>
+     <property name="text">
+      <string>自動關機時間：</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="powerOffTime_lb">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>122</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="totalweight_lb">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>1330</y>
+      <width>321</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 50px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>32000</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="battery_lb">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>1330</y>
+      <width>321</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 50px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>電池重量：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="setting_btn">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>1520</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>設定</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>350</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>Mqtt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>350</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>CPU</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>510</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>入口雷射</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>510</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>金屬雷射</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>510</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>長度雷射</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>510</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>高度雷射</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>350</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>回收桶滿</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>350</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>網路斷線</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>350</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>馬達</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mqtt_lb">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>400</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="net_lb">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>400</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cpu_lb">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>400</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="full_lb">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>400</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="motor_lb">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>400</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gate_laser_lb">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>560</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Metal_laser_lb">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>560</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="length_laser_lb">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>560</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="height_laser_lb">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>560</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>460</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>測試放入電池號碼：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="current_battery_lb">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>460</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	/*color: rgb(255, 255, 255);*/
+	color:#ffff00;
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="voice_control">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>890</y>
+      <width>681</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 8px;                     /* 槽的高度 */
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #66ccff, stop:1 #3399ff); /* 已選擇區塊顏色 */
+    border: 1px solid #777;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background: #b0b0b0;   /* 未選擇區塊 */
+    border: 1px solid #777;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: white;
+    border: 1px solid #666;
+    width: 18px;           /* 滑塊大小 */
+    margin: -5px 0;        /* 上下突出一點 */
+    border-radius: 9px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #66ccff;   /* 滑過效果 */
+    border: 1px solid #3399ff;
+}</string>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="singleStep">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="totalweight_lb_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>880</y>
+      <width>101</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 50px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>音量</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mem_lb">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>400</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: none;
+    background-color: #00ff00;
+	/*background-color: #ff0000;*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>350</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 22px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>記憶體</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="totalweight_lb_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>1230</y>
+      <width>211</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 50px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>螢幕亮度</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="brightness_control">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>1250</y>
+      <width>681</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 8px;                     /* 槽的高度 */
+    background: #e0e0e0;
+    border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                                stop:0 #66ccff, stop:1 #3399ff); /* 已選擇區塊顏色 */
+    border: 1px solid #777;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background: #b0b0b0;   /* 未選擇區塊 */
+    border: 1px solid #777;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: white;
+    border: 1px solid #666;
+    width: 18px;           /* 滑塊大小 */
+    margin: -5px 0;        /* 上下突出一點 */
+    border-radius: 9px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #66ccff;   /* 滑過效果 */
+    border: 1px solid #3399ff;
+}</string>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="singleStep">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear_carbon_btn">
+    <property name="geometry">
+     <rect>
+      <x>605</x>
+      <y>1520</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>清除碳足跡</string>
+    </property>
+   </widget>
+   <zorder>groupBox_2</zorder>
+   <zorder>home_btn</zorder>
+   <zorder>stop_service_btn</zorder>
+   <zorder>system_down_btn</zorder>
+   <zorder>system_reboot_btn</zorder>
+   <zorder>clear_btn</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>frame</zorder>
+   <zorder>totalweight_lb</zorder>
+   <zorder>battery_lb</zorder>
+   <zorder>setting_btn</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>mqtt_lb</zorder>
+   <zorder>net_lb</zorder>
+   <zorder>cpu_lb</zorder>
+   <zorder>full_lb</zorder>
+   <zorder>motor_lb</zorder>
+   <zorder>gate_laser_lb</zorder>
+   <zorder>Metal_laser_lb</zorder>
+   <zorder>length_laser_lb</zorder>
+   <zorder>height_laser_lb</zorder>
+   <zorder>label_12</zorder>
+   <zorder>current_battery_lb</zorder>
+   <zorder>voice_control</zorder>
+   <zorder>totalweight_lb_2</zorder>
+   <zorder>mem_lb</zorder>
+   <zorder>label_13</zorder>
+   <zorder>totalweight_lb_3</zorder>
+   <zorder>brightness_control</zorder>
+   <zorder>clear_carbon_btn</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

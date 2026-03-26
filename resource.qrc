@@ -1,0 +1,66 @@
+<RCC>
+    <qresource prefix="/IMAGES">
+        <file>UI_IMAGE/手機輸入頁/輸入框.png</file>
+        <file>UI_IMAGE/手機輸入頁/站點名稱.png</file>
+        <file>UI_IMAGE/手機輸入頁/矩形 27.png</file>
+        <file>UI_IMAGE/手機輸入頁/按鍵框.png</file>
+        <file>UI_IMAGE/手機輸入頁/timer.png</file>
+        <file>UI_IMAGE/手機輸入頁/return.png</file>
+        <file>UI_IMAGE/手機輸入頁/Icon fa-solid-delete-left.png</file>
+        <file>UI_IMAGE/手機輸入頁/ecoco-logo.png</file>
+        <file>UI_IMAGE/完成頁/減碳量-bg.png</file>
+        <file>UI_IMAGE/完成頁/彩帶.png</file>
+        <file>UI_IMAGE/非會員完成頁/減碳量-bg.png</file>
+        <file>UI_IMAGE/非會員完成頁/彩帶.png</file>
+        <file>UI_IMAGE/非會員計數頁/計數bg.png</file>
+        <file>UI_IMAGE/首頁/站點名稱.png</file>
+        <file>UI_IMAGE/首頁/減碳量icon.png</file>
+        <file>UI_IMAGE/首頁/會員登入.png</file>
+        <file>UI_IMAGE/首頁/客服.png</file>
+        <file>UI_IMAGE/首頁/不登入回收.png</file>
+        <file>UI_IMAGE/首頁/ecoco-logo.png</file>
+        <file>UI_IMAGE/首頁/bg.png</file>
+        <file>UI_IMAGE/首頁 – 彈窗 – 聯繫客服/service.png</file>
+        <file>UI_IMAGE/首頁 – 彈窗 – 聯繫客服/android-cancel.png</file>
+        <file>UI_IMAGE/會員計數頁/計數bg.png</file>
+        <file>UI_IMAGE/會員計數頁/站點名稱.png</file>
+        <file>UI_IMAGE/會員計數頁/確認鍵.png</file>
+        <file>UI_IMAGE/會員計數頁/user-avatar.png</file>
+        <file>UI_IMAGE/會員計數頁/timer.png</file>
+        <file>UI_IMAGE/會員計數頁/ecoco-logo.png</file>
+        <file>UI_IMAGE/非會員計數頁/5.png</file>
+        <file>UI_IMAGE/非會員計數頁/6.png</file>
+        <file>UI_IMAGE/非會員計數頁/4.png</file>
+        <file>UI_IMAGE/非會員計數頁/3.png</file>
+        <file>UI_IMAGE/非會員計數頁/9v.png</file>
+        <file>UI_IMAGE/非會員計數頁/2.png</file>
+        <file>UI_IMAGE/非會員計數頁/1.png</file>
+        <file>UI_IMAGE/會員計數頁/5.png</file>
+        <file>UI_IMAGE/會員計數頁/6.png</file>
+        <file>UI_IMAGE/會員計數頁/4.png</file>
+        <file>UI_IMAGE/會員計數頁/3.png</file>
+        <file>UI_IMAGE/會員計數頁/9v.png</file>
+        <file>UI_IMAGE/會員計數頁/2.png</file>
+        <file>UI_IMAGE/會員計數頁/1.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/timer.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/輸入框.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/Icon fa-solid-delete-left.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/矩形 27.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/按鍵框.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/return.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/站點名稱.png</file>
+        <file>UI_IMAGE/手機輸入頁 – 輸入錯誤頁/ecoco-logo.png</file>
+        <file>UI_IMAGE/welcome-back/welcome-back.png</file>
+        <file>UI_IMAGE/nmb_error/error.png</file>
+        <file>UI_IMAGE/login_error/error.png</file>
+        <file>UI_IMAGE/importing-points/importing-points.png</file>
+        <file>UI_IMAGE/error/error.png</file>
+        <file>UI_IMAGE/system_err_image/rejectWarning.png</file>
+        <file>UI_IMAGE/system_err_image/oosImg.png</file>
+        <file>UI_IMAGE/line.png</file>
+        <file>UI_IMAGE/system_err_image/nightBreak.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>UI_IMAGE/首頁 – 彈窗 – 聯繫客服/android-cancel.png</file>
+    </qresource>
+</RCC>

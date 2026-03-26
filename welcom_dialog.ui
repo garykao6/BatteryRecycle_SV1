@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>welcom_Dialog</class>
+ <widget class="QDialog" name="welcom_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="Top_Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>1120</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="Bottom_Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>1120</y>
+     <width>1080</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+	background-color: rgba(0, 0, 0,128);
+}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>155</y>
+      <width>491</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: url(:/IMAGES/UI_IMAGE/welcome-back/welcome-back.png);
+	border: none;
+	background-color:transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>444</y>
+      <width>152</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 500 38px &quot;Noto Sans CJK TC&quot;;
+	color: black;
+	border: none;
+	background-color:transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>歡迎回來</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

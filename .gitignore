@@ -1,0 +1,22 @@
+# CMake / Ninja 建置目錄
+build/
+cmake-build-*/
+
+# Qt Creator / CMake 使用者設定（含本機路徑）
+CMakeLists.txt.user
+CMakeLists.txt.user.*
+.qtcreator/
+
+# 舊版 qmake 使用者設定
+*.pro.user
+*.pro.user.*
+
+# 編譯產物
+*.o
+*.a
+*.so
+*.exe
+
+# 系統雜檔
+.DS_Store
+Thumbs.db

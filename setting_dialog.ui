@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setting_Dialog</class>
+ <widget class="QDialog" name="setting_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="sub_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>1920</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+	image: none;
+	border: none;
+	background-color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <widget class="QPushButton" name="number_btn_1">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inpute_edit">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>310</y>
+      <width>531</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	font: 700 35px &quot;Noto Sans CJK TC&quot;;
+	letter-spacing: 18px;
+	image: none;
+	border:none;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>310</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 50px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>FLCBRM03_</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_5">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_6">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_7">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_8">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_9">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="number_btn_0">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>550</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_btn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>920</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>倒退</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="make_sure_btn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>920</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 26px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>機台序號確認</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_btn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>1090</y>
+      <width>671</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>關閉</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_A">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>a</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_B">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>b</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_C">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>c</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_D">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>d</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_E">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>e</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_F">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>f</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_G">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>g</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_H">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>h</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_I">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>i</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_J">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>640</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>j</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_K">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>k</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_L">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>l</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_M">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>m</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_N">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>n</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_O">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>o</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_P">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>p</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_Q">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>q</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_R">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>r</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_S">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>s</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_T">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>730</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>t</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_U">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>u</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_V">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>v</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_W">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>w</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_X">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_Y">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="letter_btn_Z">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>z</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="switch_letter_lb">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>820</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>大寫</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="symbol_1_lb">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="symbol_2_lb">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>820</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>_</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>420</y>
+      <width>301</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 50px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>自動關機時間</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="time_edit">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>420</y>
+      <width>531</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	font: 700 35px &quot;Noto Sans CJK TC&quot;;
+	letter-spacing: 18px;
+	image: none;
+	border:none;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="time_make_sure_btn">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>920</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 26px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>關機設定確認</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>1310</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 40px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>合約開機訊息：</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="power_message_lb">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>1310</y>
+      <width>481</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>無訊息</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignJustify|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="power_btn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>1290</y>
+      <width>170</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	font: 700 30px &quot;Noto Sans CJK TC&quot;;
+	color: rgb(255, 255, 255);
+	image: none;
+	border: 2px solid white;   /* 白色邊框，寬度2px */
+    border-radius: 12px;       /* 圓角半徑12px，可自行調整 */
+    background-color: transparent; /* 背景透明（可依需要改顏色） */
+}</string>
+    </property>
+    <property name="text">
+     <string>合約開機</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

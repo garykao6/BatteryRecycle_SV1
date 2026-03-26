@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomePage</class>
+ <widget class="QWidget" name="HomePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="BottomWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>1120</y>
+     <width>1080</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1080</width>
+     <height>800</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+	image: url(:/IMAGES/UI_IMAGE/首頁/bg.png);
+}</string>
+   </property>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>74</x>
+      <y>36</y>
+      <width>239</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: url(:/IMAGES/UI_IMAGE/首頁/ecoco-logo.png);
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>476</x>
+      <y>59</y>
+      <width>530</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: url(:/IMAGES/UI_IMAGE/首頁/站點名稱.png);
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time_lb">
+    <property name="geometry">
+     <rect>
+      <x>812</x>
+      <y>17</y>
+      <width>200</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	letter-spacing: 0px;
+	color: white;
+	image: none;
+	font: 500 20px &quot;Noto Sans CJK TC&quot;;
+	border: none;
+	background-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>2025/8/19下午16:00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>531</x>
+      <y>65</y>
+      <width>96</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font: 500 24px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>站點名稱</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="station_lb">
+    <property name="geometry">
+     <rect>
+      <x>659</x>
+      <y>65</y>
+      <width>312</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font: 500 24px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>無資料</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>366</x>
+      <y>241</y>
+      <width>46</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	image: url(:/IMAGES/UI_IMAGE/首頁/減碳量icon.png);
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>299</x>
+      <y>156</y>
+      <width>172</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font:900 41px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>歡迎使用</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>482</x>
+      <y>156</y>
+      <width>299</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: #FAE0B8;
+	font: 41px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>智慧電池回收機</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>417</x>
+      <y>238</y>
+      <width>62</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font: 20px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>    累積
+減碳量</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="carbon_lb">
+    <property name="geometry">
+     <rect>
+      <x>499</x>
+      <y>240</y>
+      <width>169</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: #FF5000;
+	font: 900 34px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>0.0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>688</x>
+      <y>253</y>
+      <width>27</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font: 20px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>KG</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="service_btn">
+    <property name="geometry">
+     <rect>
+      <x>524</x>
+      <y>643</y>
+      <width>229</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	image: url(:/IMAGES/UI_IMAGE/首頁/客服.png);
+	border: none;
+	background-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>654</y>
+      <width>188</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font:20px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>需要清潔  |  機台異常</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nmb_btn">
+    <property name="geometry">
+     <rect>
+      <x>263</x>
+      <y>325</y>
+      <width>254</width>
+      <height>278</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	image: url(:/IMAGES/UI_IMAGE/首頁/不登入回收.png);
+	border: none;
+	background-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mb_btn">
+    <property name="geometry">
+     <rect>
+      <x>564</x>
+      <y>325</y>
+      <width>254</width>
+      <height>278</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	image: url(:/IMAGES/UI_IMAGE/首頁/會員登入.png);
+	border: none;
+	background-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showtxt_1_lb">
+    <property name="geometry">
+     <rect>
+      <x>302</x>
+      <y>355</y>
+      <width>176</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: black;
+	font: 900 34px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>不集點回收</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showtxt_2_lb">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>355</y>
+      <width>142</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: black;
+	font: 900 34px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>會員登入</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showtxt_3_lb">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>404</y>
+      <width>125</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: black;
+	font: 20px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>不登入純回收</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showtxt_4_lb">
+    <property name="geometry">
+     <rect>
+      <x>639</x>
+      <y>404</y>
+      <width>104</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: black;
+	font: 20px &quot;Noto Sans CJK TC&quot;;
+	image: none;
+	border: none;
+	background-color : transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>可累積點數</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>30</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	image:none;
+	background-color: transparent;
+	border:none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="go_backstage_login_btn">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>160</y>
+      <width>471</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	image:none;
+	background-color: transparent;
+	border:none;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="TopWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>1120</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

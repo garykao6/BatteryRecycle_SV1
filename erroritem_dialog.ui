@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ErrorItem_Dialog</class>
+ <widget class="QDialog" name="ErrorItem_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>1920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="show_lb">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>1920</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	/*image: url(:/IMAGES/UI_IMAGE/system_err_image/rejectWarning.png);;*/
+	image: url(:/IMAGES/UI_IMAGE/system_err_image/oosImg.png);
+	border: none;
+	/*background-color:rgba(0,0,0,128);*/
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="go_backstage_login_btn">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>1070</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	image: none;
+	border: none;
+	background-color: transparent;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
