@@ -1,7 +1,7 @@
 一代電池機 — 版本與 Git 習慣
 ================================
 
-目前軟韌體版本字串定義於 global.cpp 的 global::SWVersion（例：SmartBatteryV1-1.1.6）。
+目前軟韌體版本字串定義於 global.cpp 的 global::SWVersion（例：SmartBatteryV1-1.1.7）。
 
 修改程式或發佈前請依序：
 
