@@ -555,7 +555,7 @@ QMap<QString,int> mb_PutINBatteryPage::collectBatteryStatus() const {
     map.insert("4",  lastbattery4);
     map.insert("5",  lastbattery5);
     map.insert("6",  lastbattery6);
-    //map.insert("9",  0);//原本的
-    map.insert("9",  DeviceAPI_GetMotorStalled());//9用來放賭轉次數
+    map.insert("9",  0);//原本的
+    //map.insert("9",  DeviceAPI_GetMotorStalled());//9用來放賭轉次數
     return map;
 }

@@ -57,7 +57,7 @@ namespace global {
 
     // 軟韌體版本
     // QString SWVersion = "SmartBatteryV2-1.1.0";
-    QString SWVersion = "SmartBatteryV1-1.1.7";
+    QString SWVersion = "SmartBatteryV1-1.1.8";
 
     //站點名稱
     QString storeInfo = "";
