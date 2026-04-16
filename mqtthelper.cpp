@@ -13,8 +13,9 @@ MqttHelper::MqttHelper(QObject *parent)
     // m_client->setUsername("ecoco");
     // m_client->setPassword("7xWD*o2kiN-v");
 
-    m_client->setHostname("mqtt.funleadchange.com");//測試環境
-    //m_client->setHostname("mqtt.ecoco.xyz"); //正式環境
+    //m_client->setHostname("mqtt.funleadchange.com");//測試環境
+    m_client->setHostname("mqtt.ecoco.xyz"); //正式環境
+
     m_client->setPort(1883);
     m_client->setUsername("ecoco");
     m_client->setPassword("7xWD*o2kiN-v");
